@@ -21,6 +21,8 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  height: 80px;
+  padding-top: 5px;
 }
 
 p {
