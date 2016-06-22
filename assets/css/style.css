@@ -190,3 +190,7 @@ span.fa {
   .list-inline li.sponsor a {
     display: inline-block;
   }
+
+#info h2 {
+  margin-top: 55px;
+}
