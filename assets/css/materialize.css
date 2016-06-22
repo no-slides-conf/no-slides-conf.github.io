@@ -7461,12 +7461,13 @@ nav .input-field label.active {
 
 .navbar-fixed {
   position: relative;
-  height: 56px;
+  height: 80px;
   z-index: 998;
 }
 
 .navbar-fixed nav {
   position: fixed;
+  height: 80px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -9797,7 +9798,6 @@ select {
 .side-nav li {
   float: none;
   padding: 0 15px;
-  line-height: 64px;
 }
 
 .side-nav li:hover, .side-nav li.active {
@@ -9808,8 +9808,8 @@ select {
   color: #444;
   display: block;
   font-size: 1rem;
-  height: 64px;
-  line-height: 64px;
+  height: 80px;
+  line-height: 80px;
   padding: 0 15px;
 }
 
