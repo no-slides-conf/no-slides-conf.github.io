@@ -48,12 +48,12 @@
 
     <title>NoSlidesConf - Just hands-on sessions</title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" type="text/css" rel="stylesheet">
 
-    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="assets/css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
   <body>
     <div class="navbar-fixed">
@@ -157,16 +157,455 @@
 
     <div class="container">
       <div class="section">
-        <div class="row center">
-          <div class="col s12 m4 offset-m4 text">
-            <p>
-              <b class="red-text">The CFP closes on 30 September 2016</b>
-            </p>
-            <p>
-              No matter what tool or device you are using, just
-              send your proposal to <b><a class="blue-text" href="mailto:thewildbunch@noslidesconf.net">the wild bunch</a></b>
-              and amaze everybody with your hands-on session!
-            </p>
+        <div class="row">
+          <div id="hallsWrapper">
+            <div id="halls">
+              <div class="col m4 hall-wrapper">
+                <div class="item selected" data-session-list-selector="#vimHallSessionList">
+                  <h4>Vim hall</h4>
+                  <h5>Demos</h5>
+                </div>
+              </div>
+              <div class="col m4 hall-wrapper">
+                <div class="item" data-session-list-selector="#emacsHallSessionList">
+                  <h4>Emacs hall</h4>
+                  <h5>Demos</h5>
+                </div>
+              </div>
+              <div class="col m4 hall-wrapper">
+                <div class="item" data-session-list-selector="#atomHallSessionList">
+                  <h4>Atom hall</h4>
+                  <h5>Workshops</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m12 l10 offset-l1">
+            <div id="perHallSessionLists">
+              <div id="vimHallSessionList" class="item">
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">09.30</span>
+                    </div>
+                    <div class="description title-only">
+                      <h3>Opening remarks</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">09.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-coffee"></i>
+                      <span class="time">10.30</span>
+                    </div>
+                    <div class="description">
+                      <h3>Break</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">11.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">12.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-cutlery"></i>
+                      <span class="time">12.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Lunch</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">14.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">15.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-coffee"></i>
+                      <span class="time">15.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Break</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">16.15</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">17.15</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">18.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Closing remarks</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="emacsHallSessionList" class="item hidden">
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">09.30</span>
+                    </div>
+                    <div class="description">
+                      <h3>Opening remarks</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">09.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-coffee"></i>
+                      <span class="time">10.30</span>
+                    </div>
+                    <div class="description">
+                      <h3>Break</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">11.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">12.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-cutlery"></i>
+                      <span class="time">12.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Lunch</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">14.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">15.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-coffee"></i>
+                      <span class="time">15.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Break</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">16.15</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">17.15</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">18.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Closing remarks</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="atomHallSessionList" class="item hidden">
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-coffee"></i>
+                      <span class="time">10.30</span>
+                    </div>
+                    <div class="description">
+                      <h3>Break</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">11.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-cutlery"></i>
+                      <span class="time">12.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Lunch</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-clock-o"></i>
+                      <span class="time">14.00</span>
+                    </div>
+                    <div class="description">
+                      <h3>Title</h3>
+                      <p>
+                        Vestibulum vel accumsan arcu. Duis nisl purus, interdum nec arcu nec, rutrum fringilla neque.
+                        Pellentesque vestibulum turpis sit amet venenatis faucibus.
+                      </p>
+                      <img class="speaker-image" src="assets/img/speakers/00.jpg" />
+                      <div class="speaker-name-surname">Name Surname</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="session-wrapper">
+                  <div class="session">
+                    <div class="symbol">
+                      <i class="fa fa-2x fa-coffee"></i>
+                      <span class="time">15.45</span>
+                    </div>
+                    <div class="description">
+                      <h3>Break</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -634,11 +1073,11 @@
 
     <div id="js">
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkHHdfju4OviCVhTwXe6m3kV5ppcAY6Wk"></script>
       <script type="text/javascript" src="https://use.fontawesome.com/fa1fe610a3.js"></script>
       <script type="text/javascript" src="assets/js/materialize.js"></script>
-      <script type="text/javascript" src="assets/js/init.js"></script>
       <script type="text/javascript" src="assets/js/timeline.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkHHdfju4OviCVhTwXe6m3kV5ppcAY6Wk"></script>
+      <script type="text/javascript" src="assets/js/init.js"></script>
       <script type="text/javascript">
         (function (i, s, o, g, r, a, m) {
           i['GoogleAnalyticsObject'] = r;

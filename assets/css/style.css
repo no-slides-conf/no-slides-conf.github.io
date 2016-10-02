@@ -1,25 +1,20 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 .row .text {
   font-size: 1.3em;
   font-stretch: expanded;
 }
-  #banner h1 {
-    font-size: 4.2em;
-  }
-  #banner .row .text {
-    font-size: 1.6em;
-  }
-  footer .row .text {
-    font-size: 1.25em;
-    margin-left: 7px;
-  }
+
+#banner h1 {
+  font-size: 4.2em;
+}
+
+#banner .row .text {
+  font-size: 1.6em;
+}
+
+footer .row .text {
+  font-size: 1.25em;
+  margin-left: 7px;
+}
 
 .material-icons {
   font-size: 35px;
@@ -44,15 +39,17 @@ p {
   min-height: 300px;
   line-height: 0;
   height: auto;
-  background-color:rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.7);
   color: rgba(255,255,255,.9);
 }
-  .parallax-container#banner {
-    min-height: 580px;
-  }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container#banner {
+  min-height: 580px;
+}
+
+.parallax-container .section {
+  width: 100%;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -116,29 +113,30 @@ footer.page-footer {
 }
 
 #banner .social {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 #banner .social > li a {
   color: #fff;
 }
-  #banner .social > li a:Hover,
-  #banner .social > li a.active {
-    color: #2da9ff;
-    text-decoration: none;
-  }
+
+#banner .social > li a:hover,
+#banner .social > li a.active {
+  color: #2da9ff;
+  text-decoration: none;
+}
 
 span.fa {
-    display: inline-block;
-    font-size: 35px;
+  display: inline-block;
+  font-size: 35px;
 }
 
 .evtsiteico, .evtsiteico:hover {
-    display: inline-block;
-    width: 32.5px;
-    height: 35px;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  display: inline-block;
+  width: 32.5px;
+  height: 35px;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .lanyrd {
@@ -146,9 +144,10 @@ span.fa {
   background-size: 25px;
   background-position: 0 8px;
 }
-  .lanyrd:hover {
-    background: url('../img/icons/lanyrd-white.png') no-repeat;
-  }
+
+.lanyrd:hover {
+  background: url('../img/icons/lanyrd-white.png') no-repeat;
+}
 
 .ebrite {
   margin: 65px 0 0 0;
@@ -164,6 +163,101 @@ span.fa {
   width: 90%;
   height: 300px;
   margin: 0;
+}
+
+#halls .hall-wrapper {
+  padding: 10px;
+}
+
+#halls .item {
+  padding: 10px;
+  background: #efefef;
+}
+
+#halls .item.selected,
+#halls .item:hover,
+#halls .item:active {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffffff;
+  background: rgba(20, 125, 180, 0.8);
+}
+
+#halls .item h4 {
+  font-size: 28px;
+}
+
+#halls .item h5 {
+  font-size: 18px;
+}
+
+#halls .item h4,
+#halls .item h5 {
+  white-space: nowrap;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.session-wrapper {
+  display: table;
+  width: 100%;
+  border-spacing: 10px 5px;
+  height: 110px; 
+}
+
+.session {
+  display: table-row;
+}
+
+.session .symbol {
+  width: 16%;
+  padding: 5px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  background: rgba(20, 125, 180, 0.8)
+}
+
+.session .symbol i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.session .symbol .time {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.session .description {
+  font-family: 'Verdana';
+  padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  background: #f0eff0
+}
+
+.session .description h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 23px;
+  font-weight: 500;
+  color: #2090d0
+}
+
+.session .description p {
+  font-size: 14px;
+}
+
+.session .description .speaker-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.session .description .speaker-name-surname {
+  font-size: 14px;
 }
 
 .speakers {
@@ -293,22 +387,22 @@ span.fa {
   color: black;
 }
 
-.sponsorship-logos .sponsor:after,
-.sponsorship-packages .sponsor:before {
+.sponsorship-logos .sponsor: after,
+.sponsorship-packages .sponsor: before {
   position: relative;
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
   padding: 4px 8px;
   font-weight: bold;
   font-size: 0.8em;
   font-family: Verdana;
 }
 
-.sponsorship-logos .sponsor:after {
+.sponsorship-logos .sponsor: after {
   top: 40px;
 }
 
-.sponsorship-packages .sponsor:before {
+.sponsorship-packages .sponsor: before {
   position: absolute;
   left: 5px;
   top: 30px;
@@ -316,38 +410,38 @@ span.fa {
   z-index: 1;
 }
 
-.sponsorship-logos .sponsor.taaffeite:after,
-.sponsorship-packages .sponsor.taaffeite:before {
+.sponsorship-logos .sponsor.taaffeite: after,
+.sponsorship-packages .sponsor.taaffeite: before {
   content: "TAAFFEITE SPONSOR";
   background: #995588;
 }
 
-.sponsorship-logos .sponsor.diamond:after,
-.sponsorship-packages .sponsor.diamond:before {
+.sponsorship-logos .sponsor.diamond: after,
+.sponsorship-packages .sponsor.diamond: before {
   content: "DIAMOND SPONSOR";
   background: #0ABAE9;
 }
 
-.sponsorship-logos .sponsor.ruby:after,
-.sponsorship-packages .sponsor.ruby:before {
+.sponsorship-logos .sponsor.ruby: after,
+.sponsorship-packages .sponsor.ruby: before {
   content: "RUBY SPONSOR";
   background: #CC342D;
 }
 
-.sponsorship-logos .sponsor.emerald:after,
-.sponsorship-packages .sponsor.emerald:before {
+.sponsorship-logos .sponsor.emerald: after,
+.sponsorship-packages .sponsor.emerald: before {
   content: "EMERALD SPONSOR";
   background: #5B9C64;
 }
 
-.sponsorship-logos .sponsor.sapphire:after,
-.sponsorship-packages .sponsor.sapphire:before {
+.sponsorship-logos .sponsor.sapphire: after,
+.sponsorship-packages .sponsor.sapphire: before {
   content: "SAPPHIRE SPONSOR";
   background: #0F52BA;
 }
 
-.sponsorship-logos .sponsor.amethyst:after,
-.sponsorship-packages .sponsor.amethyst:before {
+.sponsorship-logos .sponsor.amethyst: after,
+.sponsorship-packages .sponsor.amethyst: before {
   content: "AMETHYST SPONSOR";
   background: #9C8AA5;
 }
@@ -401,8 +495,8 @@ span.fa {
 
 .location { position: relative; background: #fff; z-index: 1; }
 .location h3 { margin-left: 3%; }
-.location ul { list-style:none; padding-left: 10px; }
-.location li { margin:25px 0px; font-size: 12pt;}
+.location ul { list-style: none; padding-left: 10px; }
+.location li { margin: 25px 0px; font-size: 12pt;}
 .location li  i { padding-right: 15px; font-size: 12pt;}
 
 
