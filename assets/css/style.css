@@ -165,18 +165,22 @@ span.fa {
   margin: 0;
 }
 
+#halls {
+  padding: 0;
+}
+
 #halls .hall-wrapper {
   padding: 10px;
 }
 
-#halls .item {
+.hall {
   padding: 10px;
   background: #efefef;
 }
 
-#halls .item.selected,
-#halls .item:hover,
-#halls .item:active {
+.hall.selected,
+.hall:hover,
+.hall:active {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -184,27 +188,30 @@ span.fa {
   background: rgba(20, 125, 180, 0.8);
 }
 
-#halls .item h4 {
+.hall h4 {
   font-size: 28px;
 }
 
-#halls .item h5 {
+.hall h5 {
   font-size: 18px;
 }
 
-#halls .item h4,
-#halls .item h5 {
-  white-space: nowrap;
+.hall h4,
+.hall h5 {
   margin-bottom: 10px;
   text-align: center;
   cursor: pointer;
 }
 
-.session-wrapper {
+#hallSessionLists {
+  padding: 0;
+}
+
+#hallSessionLists .hallSessionList {
   display: table;
   width: 100%;
   border-spacing: 10px 5px;
-  height: 110px; 
+  padding: 0;
 }
 
 .session {
@@ -213,7 +220,7 @@ span.fa {
 
 .session .symbol {
   width: 16%;
-  padding: 5px;
+  padding: 15px 0;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -499,7 +506,11 @@ span.fa {
 .location li { margin: 25px 0px; font-size: 12pt;}
 .location li  i { padding-right: 15px; font-size: 12pt;}
 
-
+@media only screen and (min-width: 1550px) {
+  .row .col.offset-l0_5 {
+    margin-left: 4.16666666666%;
+  }
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

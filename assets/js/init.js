@@ -14,8 +14,8 @@
         $(window).resize(onResize);
         onResize();
 
-        var sessionLists = $("#perHallSessionLists .item").filter('.hidden').hide().end();
-        $("#halls").on("click", ".item", function (e) {
+        var sessionLists = $("#hallSessionLists .hallSessionList").filter('.hidden').hide().end();
+        $("#halls").on("click", ".hall", function (e) {
             e.preventDefault();
             $elem = $(this);
             $elem.addClass('selected').closest('#halls').find('.selected').not($elem).removeClass('selected');
