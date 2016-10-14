@@ -131,22 +131,23 @@ span.fa {
   font-size: 35px;
 }
 
-.evtsiteico, .evtsiteico:hover {
+.evtsiteico,
+.evtsiteico:hover {
   display: inline-block;
   width: 32.5px;
   height: 35px;
   background-repeat: no-repeat;
   overflow: hidden;
-}
-
-.lanyrd {
-  background: url('../img/icons/lanyrd-blue.png') no-repeat;
   background-size: 25px;
-  background-position: 0 8px;
+  background-position: 0 10px;
 }
 
-.lanyrd:hover {
-  background: url('../img/icons/lanyrd-white.png') no-repeat;
+.evtsiteico.lanyrd {
+  background-image: url('../img/icons/lanyrd-white.png');
+}
+
+.evtsiteico.lanyrd:hover {
+  background-image: url('../img/icons/lanyrd-blue.png');
 }
 
 .ebrite {
