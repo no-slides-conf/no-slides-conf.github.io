@@ -143,11 +143,11 @@ span.fa {
 }
 
 .evtsiteico.lanyrd {
-  background-image: url('../img/icons/lanyrd-white.png');
+  background-image: url('../img/misc/lanyrd-white.png');
 }
 
 .evtsiteico.lanyrd:hover {
-  background-image: url('../img/icons/lanyrd-blue.png');
+  background-image: url('../img/misc/lanyrd-blue.png');
 }
 
 .ebrite {
@@ -244,7 +244,7 @@ span.fa {
   padding: 15px;
   display: table-cell;
   vertical-align: middle;
-  background: #f0eff0
+  background: #f0eff0;
 }
 
 .session .description h3 {
@@ -255,8 +255,37 @@ span.fa {
   color: #2090d0
 }
 
-.session .description p {
+.session .description h3.language-flag:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  background-size: 30px 18px;
+  margin-right: 10px;
+}
+
+.session .description h3.language-flag.ita:before {
+  background-image: url(/assets/img/misc/flag-ita.png);
+}
+
+.session .description h3.language-flag.eng:before {
+  background-image: url(/assets/img/misc/flag-eng.png);
+}
+
+.session .description .abstract {
+  padding: 20px 0;
   font-size: 14px;
+}
+
+.session .description ul {
+  padding: 0 25px;
+  margin: 3px 0 0 5px;
+  list-style: initial;
+}
+
+.session .description li {
+  padding: 0 10px;
+  list-style-type: disc;
 }
 
 .session .description .speaker-image {
@@ -278,8 +307,8 @@ span.fa {
 
 .speaker .picture {
   position: relative;
-  width: 263px;
-  height: 263px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   display: table;
   margin: auto;
@@ -287,8 +316,8 @@ span.fa {
 
 .speaker .picture img {
   position: absolute;
-  width: 263px;
-  height: 263px;
+  width: 400px;
+  height: 400px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
@@ -297,8 +326,8 @@ span.fa {
 
 .speaker .picture .details {
   position: absolute;
-  width: 263px;
-  height: 263px;
+  width: 400px;
+  height: 400px;
   background: rgba(20, 125, 180, 0.8);
   font-size: 16px;
   -webkit-transition: all .5s;
@@ -314,7 +343,7 @@ span.fa {
 
 .speaker .picture .details p {
   color: #fff;
-  padding: 11px 22px;
+  padding: 20px 40px;
   position: absolute;
   top: -100px;
   -webkit-transition: all .5s;
@@ -331,7 +360,7 @@ span.fa {
 
 .speaker .picture .details .social {
   position: relative;
-  top: 310px;
+  top: 430px;
   left: 0px;
   font-size: 26px;
   padding: 0;
@@ -395,8 +424,8 @@ span.fa {
   color: black;
 }
 
-.sponsorship-logos .sponsor: after,
-.sponsorship-packages .sponsor: before {
+.sponsorship-logos .sponsor:after,
+.sponsorship-packages .sponsor:before {
   position: relative;
   color: white;
   text-align: center;
@@ -406,11 +435,11 @@ span.fa {
   font-family: Verdana;
 }
 
-.sponsorship-logos .sponsor: after {
+.sponsorship-logos .sponsor:after {
   top: 40px;
 }
 
-.sponsorship-packages .sponsor: before {
+.sponsorship-packages .sponsor:before {
   position: absolute;
   left: 5px;
   top: 30px;
@@ -418,38 +447,38 @@ span.fa {
   z-index: 1;
 }
 
-.sponsorship-logos .sponsor.taaffeite: after,
-.sponsorship-packages .sponsor.taaffeite: before {
+.sponsorship-logos .sponsor.taaffeite:after,
+.sponsorship-packages .sponsor.taaffeite:before {
   content: "TAAFFEITE SPONSOR";
   background: #995588;
 }
 
-.sponsorship-logos .sponsor.diamond: after,
-.sponsorship-packages .sponsor.diamond: before {
+.sponsorship-logos .sponsor.diamond:after,
+.sponsorship-packages .sponsor.diamond:before {
   content: "DIAMOND SPONSOR";
   background: #0ABAE9;
 }
 
-.sponsorship-logos .sponsor.ruby: after,
-.sponsorship-packages .sponsor.ruby: before {
+.sponsorship-logos .sponsor.ruby:after,
+.sponsorship-packages .sponsor.ruby:before {
   content: "RUBY SPONSOR";
   background: #CC342D;
 }
 
-.sponsorship-logos .sponsor.emerald: after,
-.sponsorship-packages .sponsor.emerald: before {
+.sponsorship-logos .sponsor.emerald:after,
+.sponsorship-packages .sponsor.emerald:before {
   content: "EMERALD SPONSOR";
   background: #5B9C64;
 }
 
-.sponsorship-logos .sponsor.sapphire: after,
-.sponsorship-packages .sponsor.sapphire: before {
+.sponsorship-logos .sponsor.sapphire:after,
+.sponsorship-packages .sponsor.sapphire:before {
   content: "SAPPHIRE SPONSOR";
   background: #0F52BA;
 }
 
-.sponsorship-logos .sponsor.amethyst: after,
-.sponsorship-packages .sponsor.amethyst: before {
+.sponsorship-logos .sponsor.amethyst:after,
+.sponsorship-packages .sponsor.amethyst:before {
   content: "AMETHYST SPONSOR";
   background: #9C8AA5;
 }
@@ -560,7 +589,7 @@ span.fa {
   }
 
   .speaker .picture .details .social {
-    top: 210px;
+    top: 330px;
   }
 
   .speaker:hover .picture .details .social {
